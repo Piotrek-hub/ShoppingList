@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingList.Controls.ProductControl">
+    <VerticalStackLayout>
+        <Label 
+            Text="Product Name"
+            x:Name="product_name"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="Product Category"
+            x:Name="product_category"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="Product Unit"
+            x:Name="product_unit"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="Product Amount"
+            x:Name="product_amount"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button Text="Remove" x:Name="RemoveProduct" Clicked="RemoveProductClicked"/>
+        <Button Text="Bought" x:Name="ProductBought" Clicked="ProductBoughtClicked"/>
+    </VerticalStackLayout>
+</ContentView>

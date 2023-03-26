@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingList.AddCategory"
+             Title="Add Category">
+    <VerticalStackLayout>
+        <Entry x:Name="category_name"
+            Placeholder="Enter Category Name"/>
+        <Button Text="Add Category"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Clicked="AddCategoryClicked" />
+        <StackLayout x:Name="categories_stack"/>
+    </VerticalStackLayout>
+    
+</ContentPage>
